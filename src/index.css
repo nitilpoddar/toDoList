@@ -1,64 +1,80 @@
+*{
+    dborder: 0.5px solid black;
+}
+
 body{
     margin: 0;
     padding: 0;
+    width: 100vw;
+    height: 100vh;
+    smax-width: 100vh;
+    smax-height: 100vw;
 }
 
 .mainContainer{
     margin: 0 auto;
-    bordder: 10px solid rgb(0, 255, 34);
-    box-sizing: border-box;
-    width: 100vw;
-    height: 100vh;
+    padding: 0;
+    border: 2px solid blue;
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: space-around;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    box-sizing: border-box;
+
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 254, 176);
+    
 }
 
 .inputContainer{
-    bordxer: 2px dotted black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    sborder: 3px dotted red;
+    margin-bottom: 20px;
     box-sizing: border-box;
     width: 100%;
     height: 10%;
-    margin: 1%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    justify-content: space-evenly;
-    align-content: center;
 }
 
 input{
-    border-radius: 5px;
-    display: inline-block;
-    border: 0.5px solid black;
+    display: block;
     box-sizing: content-box;
-    width: 70%;
+    width: 75%;
     height: 100%;
+}
+
+button{
+    display: block;
+    width: 25%;
+    height: 100%;
+    font-size: 55px;
+    border: none;
+    background-color: coral;
 }
 
 .taskContainer{
     box-sizing: border-box;
+    height: 70%;
     width: 100%;
-    height: auto;
-    background-color: coral;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 3%;
+    justify-content: flex-end;
+    border: 2px dotted pink;
 }
 
 .taskElement{
-    display: block;
     box-sizing: border-box;
-    width: 90%;
-    height: 90%;
-    background-color: burlywood;
+    sborder: 3px dotted red;
+    padding: 20px;
+    display: block;
+    width: 100%;
+    height: auto;
     text-align: center;
-    border: 1px solid black;
+    background-color: rgb(128, 255, 202);
+
 }
-
-
 

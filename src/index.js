@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import DISPLAY from './display'
 
-  function TODO(){
+  function TODO(){                                                      //TODO component
     //const arr = ["default","defau"]
     const [task, setTask] = useState([]);
 
@@ -22,17 +22,15 @@ import DISPLAY from './display'
       }
       return <div className='inputContainer'>
                 <input type="text" />
-                <button onClick={addTask}>Submit</button>
+                <button onClick={addTask}>+</button>
               </div>
     }
 
     // TODO return value
     return (
       <div className='mainContainer'>
-        <div className=''>Task Manager made using React JS</div>
-        <INP />
-        
         <DISPLAY value = {task} />
+        <INP />
       </div>
     )
   }
